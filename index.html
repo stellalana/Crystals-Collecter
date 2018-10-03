@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Crystal Collector</title>
+
+<!-- Reset -->
+<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+<!-- Misc. Links -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
+<!-- Custom Styles -->
+<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+</head>
+<body style="padding: 0px; margin: 0px;">
+<div class="container" style="min-height: 1000%; padding: 0px; margin: 0px;">
+    <div><h1>Crystals Collecter!</h1></div>
+    <div id=instructions> 
+        <h3>How to Play</h3>
+        <ul>
+            <li>You will be given a random number at the start of the game</li>
+            <li>By clicking one of the four crystal you will add a specific number of points to your total</li>
+            <li>You win the game by matching your total to the random number</li>
+            <li>You lose if your total exceeds the random number</li>
+            <li>The crystals' values will remain hidden so try to remember!</li>
+            <li>The cyrstals' values will change at the beginning of each new game</li>
+        </ul>
+    </div>
+
+<div class="row">
+    <div class="col-sm-5">
+        <h2>Random Number:
+            <br>
+            <span id="randomNumber"></span>
+        </h2>
+    </div>  
+    <div id=winsLosses class="col-sm-5">
+        <h2>Wins:
+            <span id= "numberWins"></span>
+            <br>
+            Losses: 
+            <span id= "numberLosses"></span>
+        </h2>
+    </div>
+</div>
+
+<div class="row">
+    <div id=cyrstalContainer class="col-sm-5">
+        <img src="assets/images/bluecrystal.png" class=crystal id="blueCrystal">
+        <img src="assets/images/greencrystal.png" class=crystal id="greenCrystal">
+        <img src="assets/images/redcrystal.png" class=crystal id="redCrystal">
+        <img src="assets/images/purplecrystal.png" class=crystal id="purpleCrystal">
+    </div>
+    <div class="col-sm-5">
+        <h2 style="font-size: 20pt;">Your total score is:
+        <br>
+            <span id="total" style="font-size: 25pt;"></span>
+        </h2>
+    </div>
+</div>
+
+</div>
+<!-- Javascript Link -->
+<script type="text/javascript" src="assets/javascript/game.js"></script>
+</body>
+</html>
