@@ -1,1 +1,4 @@
-# unit-4-game
+# Crystals Collecter
+
+## Link to use the app:
+https://stellalana.github.io/Crystals-Collecter/
